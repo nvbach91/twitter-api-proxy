@@ -6,7 +6,7 @@ router.get('/test', async (req, res, next) => {
   res.json({ success: true, msg: 'See also https://github.com/nvbach91/twitter-api-proxy' });
 });
 
-router.get('/', async (req, res, next) => {
+router.post('/', async (req, res) => {
   const axiosConfig = {
     headers: {
       'Authorization': `Bearer ${req.body.BEARER_TOKEN}`
