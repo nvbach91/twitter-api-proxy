@@ -1,6 +1,19 @@
 # Twitter API Proxy
 This API is used to make requests to the Twitter API
 
+## Production
+- https://twitter-api-proxy.itake.cz/
+
+## Development
+- You'll need to have Node.js installed
+```bash
+git clone https://github.com/nvbach91/twitter-api-proxy.git
+cd twitter-api-proxy
+npm install
+npm start
+```
+- the local server will be running at http://localhost:3000/
+
 ## Features
 - CORS enabled - you can make AJAX calls from browsers to this API
 - Supports GET endpoints with BEARER token
