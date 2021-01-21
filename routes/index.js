@@ -22,4 +22,8 @@ router.post('/', async (req, res) => {
   }
 });
 
+router.get('/', (req, res) => {
+  res.json({ success: false, msg: 'See also https://github.com/nvbach91/twitter-api-proxy' });
+});
+
 module.exports = router;
