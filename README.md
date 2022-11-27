@@ -5,7 +5,7 @@ This API is used to make requests to the Twitter API
 - https://twitter-api-proxy.itake.cz/
 
 ## Development
-- You'll need to have Node.js installed
+- Node.js 16.18.0
 ```bash
 git clone https://github.com/nvbach91/twitter-api-proxy.git
 cd twitter-api-proxy
