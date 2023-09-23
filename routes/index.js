@@ -2,15 +2,15 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 
-router.get('/test', async (req, res, next) => {
+router.get('/test', async (req, res) => {
   res.json({ success: true, msg: 'See also https://github.com/nvbach91/twitter-api-proxy' });
 });
 
 router.post('/', async (req, res) => {
   const axiosConfig = {
     headers: {
-      'Authorization': `Bearer ${req.body.BEARER_TOKEN}`
-    }
+      'Authorization': `Bearer ${req.body.BEARER_TOKEN}`,
+    },
   };
   try {
     const resp = await axios.get(req.body.url, axiosConfig);
